@@ -3,7 +3,7 @@ require 'formula'
 class Subl < Formula
   homepage 'https://github.com/oame/'
   url 'https://raw.github.com/oame/homebrew-subl/master/bin/subl'
-  sha1 '9c324add57375f069c59ee75376f201195636122'
+  sha1 '22901fd364d228d2df19b560ea6142d0f90ab761'
   version '1.0'
 
   def install
