@@ -13,6 +13,10 @@ if is_running; then
 else
   "$sublime" </dev/null -n -s "$@" &
   disown -har
+
+  for i in {1..200}; do
+    sleep 0.5 && is_running "$(( i * 100 ))" && exec "$sublime" -a "$@"
+  done
 fi
 
 exit 1
